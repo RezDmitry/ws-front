@@ -5,7 +5,12 @@ const ChatConnector = ({ onClick }) => {
   return (
     <div>
       <p>Enter room id:</p>
-      <input type="text" value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
+      <input
+        type="text"
+        value={inputValue}
+        onChange={(e) => setInputValue(e.target.value)}
+        className='text_input'
+      />
       <button onClick={() => onClick(inputValue)}>Connect</button>
     </div>
   );

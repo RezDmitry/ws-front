@@ -50,7 +50,12 @@ const Chat = ({ chat }) => {
       <h1>{title}</h1>
       <div>
         <p>Connected: { '' + isConnected }</p>
-        <input type="text" value={newMessage} onChange={(e) => setNewMessage(e.target.value)} />
+        <input
+          type="text"
+          value={newMessage}
+          onChange={(e) => setNewMessage(e.target.value)}
+          className='text_input'
+        />
         <button onClick={ sendPing }>Send message</button>
       </div>
       <ol>
